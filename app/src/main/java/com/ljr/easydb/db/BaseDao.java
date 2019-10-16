@@ -33,7 +33,7 @@ public class BaseDao<T> implements IBaseDao<T> {
      * 初始化
      * @return
      */
-    protected boolean init(SQLiteDatabase sqLiteDatabase,Class<T> entityClass){
+    public boolean init(SQLiteDatabase sqLiteDatabase,Class<T> entityClass){
         this.mSQLiteDatabase = sqLiteDatabase;
         this.mEntityClass = entityClass;
         if(!mIsInit){
